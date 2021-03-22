@@ -28,7 +28,7 @@
       "elements": [
         {
           "type": "Control",
-          "scope": "#/properties/recurrence"
+          "scope": "#/properties/question"
         },
         {
           "type": "Control",
@@ -37,7 +37,7 @@
             "effect": "HIDE",
             "condition": {
               "type": "LEAF",
-              "scope": "#/properties/recurrence",
+              "scope": "#/properties/question",
               "expectedValue": "Never"
             }
           }

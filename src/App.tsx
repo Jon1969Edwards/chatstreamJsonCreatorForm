@@ -43,11 +43,11 @@ const useStyles = makeStyles((_theme) => ({
 }));
 
 const initialData = {
-  name: 'Send email to Adrian',
-  description: 'Confirm if you have passed the subject\nHereby ...',
+  name: 'Dick',
   done: true,
-  recurrence: 'Daily',
+  question: 'Is a supportcase already sent?',
   rating: 3,
+  description: 'Is a supportcase already sent?',
 };
 
 const renderers = [
@@ -67,6 +67,9 @@ const App = () => {
   }, [jsonformsData]);
 
   const clearData = () => {
+    setJsonformsData({});
+  };
+  const copyData = () => {
     setJsonformsData({});
   };
 
@@ -116,6 +119,9 @@ const App = () => {
               onChange={({ errors, data }) => setJsonformsData(data)}
             />
           </div>
+          <button onClick={copyData} color='primary'>
+            Copy Data
+          </button>
         </Grid>
       </Grid>
     </Fragment>

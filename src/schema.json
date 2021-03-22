@@ -20,9 +20,9 @@
       "type": "integer",
       "maximum": 5
     },
-    "recurrence": {
+    "question": {
       "type": "string",
-      "enum": ["Never", "Daily", "Weekly", "Monthly"]
+      "enum": ["Yes", "No", "Continue"]
     },
     "recurrence_interval": {
       "type": "integer"
