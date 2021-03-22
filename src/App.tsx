@@ -14,6 +14,7 @@ import {
 import RatingControl from './RatingControl';
 import ratingControlTester from './ratingControlTester';
 import { makeStyles } from '@material-ui/core/styles';
+import MyGroupRenderer, { myGroupTester } from './MyGroup';
 
 const useStyles = makeStyles((_theme) => ({
   container: {
@@ -53,6 +54,7 @@ const renderers = [
   ...materialRenderers,
   //register custom renderers
   { tester: ratingControlTester, renderer: RatingControl },
+  { tester: myGroupTester, renderer: MyGroupRenderer },
 ];
 
 const App = () => {
