@@ -42,13 +42,7 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-const initialData = {
-  Comment: 'Dick',
-  date: true,
-  question: 'Is a supportcase already sent?',
-  answer: 3,
-  description: 'Is a supportcase already sent?',
-};
+const initialData = {};
 
 const renderers = [
   ...materialRenderers,

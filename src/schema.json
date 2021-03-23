@@ -54,13 +54,9 @@
         }
       }
     },
-    "NoOptions": {
-      "type": "object",
+    "Options": {
       "properties": {
-        "Tags": {
-          "type": "boolean"
-        },
-        "thirdQuestion": {
+        "tags": {
           "type": "string",
           "enum": [
             "Tomato",
@@ -71,7 +67,7 @@
             "Other"
           ]
         },
-        "otherFavoriteVegetable": {
+        "otherTags": {
           "type": "string"
         }
       }

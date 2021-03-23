@@ -3,7 +3,7 @@
   "elements": [
     {
       "type": "Category",
-      "label": "Basic Information",
+      "label": "First Question",
       "elements": [
         {
           "type": "HorizontalLayout",
@@ -24,16 +24,21 @@
         {
           "type": "Control",
           "scope": "#/properties/No"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/Tags"
         }
-      ]
+      ],
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/Yes",
+          "schema": {
+            "const": true
+          }
+        }
+      }
     },
     {
       "type": "Category",
-      "label": "secondQuestion",
+      "label": "Second Question",
       "elements": [
         {
           "type": "HorizontalLayout",
@@ -54,10 +59,6 @@
         {
           "type": "Control",
           "scope": "#/properties/No"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/Tags"
         }
       ],
       "rule": {
@@ -72,7 +73,7 @@
     },
     {
       "type": "Category",
-      "label": "thirdQuestion",
+      "label": "Third Question",
       "elements": [
         {
           "type": "HorizontalLayout",
@@ -92,11 +93,7 @@
         },
         {
           "type": "Control",
-          "scope": "#/properties/No"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/Tags"
+          "scope": "#/properties/Options"
         }
       ],
       "rule": {
@@ -111,23 +108,23 @@
     },
     {
       "type": "Category",
-      "label": "thirdQuestion",
+      "label": "Options",
       "elements": [
         {
           "type": "Control",
-          "scope": "#/properties/NoOptions/properties/Tags"
+          "scope": "#/properties/options/properties/"
         },
         {
           "type": "Control",
-          "scope": "#/properties/NoOptions/properties/favoriteVegetable"
+          "scope": "#/properties/thirdQuestion/properties/Options"
         },
         {
           "type": "Control",
-          "scope": "#/properties/NoOptions/properties/otherFavoriteVegetable",
+          "scope": "#/properties/thirdQuestion/properties/otherTags",
           "rule": {
             "effect": "SHOW",
             "condition": {
-              "scope": "#/properties/NoOptions/properties/favoriteVegetable",
+              "scope": "#/properties/thirdQuestion/properties/Options",
               "schema": {
                 "const": "Other"
               }
