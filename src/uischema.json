@@ -1,54 +1,148 @@
 {
-  "type": "VerticalLayout",
+  "type": "Categorization",
   "elements": [
     {
-      "type": "Control",
-      "label": "Completed",
-      "scope": "#/properties/done"
-    },
-    {
-      "type": "Control",
-      "scope": "#/properties/name"
-    },
-    {
-      "type": "HorizontalLayout",
+      "type": "Category",
+      "label": "Basic Information",
       "elements": [
         {
-          "type": "Control",
-          "scope": "#/properties/due_date"
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/firstQuestion"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout"
         },
         {
           "type": "Control",
-          "scope": "#/properties/rating"
+          "scope": "#/properties/Yes"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/No"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Tags"
         }
       ]
     },
     {
-      "type": "HorizontalLayout",
+      "type": "Category",
+      "label": "secondQuestion",
       "elements": [
         {
-          "type": "Control",
-          "scope": "#/properties/question"
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/secondQuestion"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout"
         },
         {
           "type": "Control",
-          "scope": "#/properties/recurrence_interval",
+          "scope": "#/properties/Yes"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/No"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Tags"
+        }
+      ],
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/Yes",
+          "schema": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "type": "Category",
+      "label": "thirdQuestion",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/thirdQuestion"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Yes"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/No"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Tags"
+        }
+      ],
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/Yes",
+          "schema": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "type": "Category",
+      "label": "thirdQuestion",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/NoOptions/properties/Tags"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/NoOptions/properties/favoriteVegetable"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/NoOptions/properties/otherFavoriteVegetable",
           "rule": {
-            "effect": "HIDE",
+            "effect": "SHOW",
             "condition": {
-              "type": "LEAF",
-              "scope": "#/properties/question",
-              "expectedValue": "Never"
+              "scope": "#/properties/NoOptions/properties/favoriteVegetable",
+              "schema": {
+                "const": "Other"
+              }
             }
           }
         }
-      ]
-    },
-    {
-      "type": "Control",
-      "scope": "#/properties/description",
-      "options": {
-        "multi": true
+      ],
+      "rule": {
+        "effect": "SHOW",
+        "condition": {
+          "scope": "#/properties/No",
+          "schema": {
+            "const": true
+          }
+        }
       }
     }
   ]

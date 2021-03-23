@@ -1,32 +1,80 @@
 {
   "type": "object",
   "properties": {
-    "name": {
+    "firstQuestion": {
       "type": "string",
-      "minLength": 1
+      "minLength": 3,
+      "description": "Please enter your first question"
     },
-    "description": {
-      "title": "Long Description",
-      "type": "string"
-    },
-    "done": {
+
+    "No": {
       "type": "boolean"
     },
-    "due_date": {
+
+    "Yes": {
+      "type": "boolean"
+    },
+    "Tags": {
       "type": "string",
-      "format": "date"
+      "minLength": 3,
+      "description": "Please add your tag"
     },
-    "rating": {
-      "type": "integer",
-      "maximum": 5
+
+    "secondQuestion": {
+      "type": "object",
+      "properties": {
+        "secondQuestion": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Please enter your second question"
+        },
+        "No": {
+          "type": "boolean"
+        },
+
+        "Yes": {
+          "type": "boolean"
+        }
+      }
     },
-    "question": {
-      "type": "string",
-      "enum": ["Yes", "No", "Continue"]
+    "thirdQuestion": {
+      "type": "object",
+      "properties": {
+        "thirdQuestion": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Please enter your third question"
+        },
+        "No": {
+          "type": "boolean"
+        },
+
+        "Yes": {
+          "type": "boolean"
+        }
+      }
     },
-    "recurrence_interval": {
-      "type": "integer"
+    "NoOptions": {
+      "type": "object",
+      "properties": {
+        "Tags": {
+          "type": "boolean"
+        },
+        "thirdQuestion": {
+          "type": "string",
+          "enum": [
+            "Tomato",
+            "Potato",
+            "Salad",
+            "Aubergine",
+            "Cucumber",
+            "Other"
+          ]
+        },
+        "otherFavoriteVegetable": {
+          "type": "string"
+        }
+      }
     }
-  },
-  "required": ["name", "due_date"]
+  }
 }
