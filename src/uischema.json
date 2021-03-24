@@ -4,138 +4,34 @@
     {
       "type": "Category",
       "label": "First Question",
+      "scope": "#/properties/questions",
       "elements": [
         {
-          "type": "HorizontalLayout",
+          "type": "VerticalLayout",
           "elements": [
             {
               "type": "Control",
               "scope": "#/properties/firstQuestion"
-            }
-          ]
-        },
-        {
-          "type": "HorizontalLayout"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/Yes"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/No"
-        }
-      ],
-      "rule": {
-        "effect": "SHOW",
-        "condition": {
-          "scope": "#/properties/Yes",
-          "schema": {
-            "const": true
-          }
-        }
-      }
-    },
-    {
-      "type": "Category",
-      "label": "Second Question",
-      "elements": [
-        {
-          "type": "HorizontalLayout",
-          "elements": [
+            },
             {
               "type": "Control",
               "scope": "#/properties/secondQuestion"
-            }
-          ]
-        },
-        {
-          "type": "HorizontalLayout"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/Yes"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/No"
-        }
-      ],
-      "rule": {
-        "effect": "SHOW",
-        "condition": {
-          "scope": "#/properties/Yes",
-          "schema": {
-            "const": true
-          }
-        }
-      }
-    },
-    {
-      "type": "Category",
-      "label": "Third Question",
-      "elements": [
-        {
-          "type": "HorizontalLayout",
-          "elements": [
+            },
             {
               "type": "Control",
               "scope": "#/properties/thirdQuestion"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/tags"
             }
           ]
-        },
-        {
-          "type": "HorizontalLayout"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/Yes"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/Options"
         }
       ],
       "rule": {
         "effect": "SHOW",
         "condition": {
           "scope": "#/properties/Yes",
-          "schema": {
-            "const": true
-          }
-        }
-      }
-    },
-    {
-      "type": "Category",
-      "label": "Options",
-      "elements": [
-        {
-          "type": "Control",
-          "scope": "#/properties/options/properties/"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/thirdQuestion/properties/Options"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/thirdQuestion/properties/otherTags",
-          "rule": {
-            "effect": "SHOW",
-            "condition": {
-              "scope": "#/properties/thirdQuestion/properties/Options",
-              "schema": {
-                "const": "Other"
-              }
-            }
-          }
-        }
-      ],
-      "rule": {
-        "effect": "SHOW",
-        "condition": {
-          "scope": "#/properties/No",
           "schema": {
             "const": true
           }

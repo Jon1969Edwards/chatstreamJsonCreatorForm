@@ -2,25 +2,24 @@
   "type": "object",
   "properties": {
     "firstQuestion": {
-      "type": "object",
-      "properties": {
-        "firstQuestion": {
-          "type": "string",
-          "minLength": 3,
-          "description": "Please enter your first question"
-        },
-        "No": {
-          "type": "boolean"
-        },
-
-        "Yes": {
-          "type": "boolean"
-        },
-        "Continue": {
-          "type": "boolean"
-        }
-      }
+      "type": "string",
+      "minLength": 3,
+      "description": "Please enter your first question"
     },
+
+    "No": {
+      "type": "boolean"
+    },
+
+    "Yes": {
+      "type": "boolean"
+    },
+    "Tags": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Please add your tag"
+    },
+
     "secondQuestion": {
       "type": "object",
       "properties": {
@@ -34,9 +33,6 @@
         },
 
         "Yes": {
-          "type": "boolean"
-        },
-        "Continue": {
           "type": "boolean"
         }
       }
@@ -55,29 +51,21 @@
 
         "Yes": {
           "type": "boolean"
-        },
-        "Continue": {
-          "type": "boolean"
         }
       }
     },
-    "tags": {
+    "Options": {
       "properties": {
         "tags": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "#Tomato",
-              "#Potato",
-              "#Salad",
-              "#Aubergine",
-              "#Cucumber",
-              "#Other"
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+          "type": "string",
+          "enum": [
+            "Tomato",
+            "Potato",
+            "Salad",
+            "Aubergine",
+            "Cucumber",
+            "Other"
+          ]
         },
         "otherTags": {
           "type": "string"
