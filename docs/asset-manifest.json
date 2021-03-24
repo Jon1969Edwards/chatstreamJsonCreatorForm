@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/jsonforms-react-seed-fork/static/css/main.64a74e30.chunk.css",
-    "main.js": "/jsonforms-react-seed-fork/static/js/main.cb851124.chunk.js",
-    "main.js.map": "/jsonforms-react-seed-fork/static/js/main.cb851124.chunk.js.map",
-    "runtime-main.js": "/jsonforms-react-seed-fork/static/js/runtime-main.71609dfb.js",
-    "runtime-main.js.map": "/jsonforms-react-seed-fork/static/js/runtime-main.71609dfb.js.map",
-    "static/js/2.20827e55.chunk.js": "/jsonforms-react-seed-fork/static/js/2.20827e55.chunk.js",
-    "static/js/2.20827e55.chunk.js.map": "/jsonforms-react-seed-fork/static/js/2.20827e55.chunk.js.map",
-    "index.html": "/jsonforms-react-seed-fork/index.html",
-    "static/css/main.64a74e30.chunk.css.map": "/jsonforms-react-seed-fork/static/css/main.64a74e30.chunk.css.map",
-    "static/js/2.20827e55.chunk.js.LICENSE.txt": "/jsonforms-react-seed-fork/static/js/2.20827e55.chunk.js.LICENSE.txt",
-    "static/media/logo.103b5fa1.svg": "/jsonforms-react-seed-fork/static/media/logo.103b5fa1.svg"
+    "main.css": "/chatstreamJSONform/static/css/main.64a74e30.chunk.css",
+    "main.js": "/chatstreamJSONform/static/js/main.706077c0.chunk.js",
+    "main.js.map": "/chatstreamJSONform/static/js/main.706077c0.chunk.js.map",
+    "runtime-main.js": "/chatstreamJSONform/static/js/runtime-main.31c65e8f.js",
+    "runtime-main.js.map": "/chatstreamJSONform/static/js/runtime-main.31c65e8f.js.map",
+    "static/js/2.20827e55.chunk.js": "/chatstreamJSONform/static/js/2.20827e55.chunk.js",
+    "static/js/2.20827e55.chunk.js.map": "/chatstreamJSONform/static/js/2.20827e55.chunk.js.map",
+    "index.html": "/chatstreamJSONform/index.html",
+    "static/css/main.64a74e30.chunk.css.map": "/chatstreamJSONform/static/css/main.64a74e30.chunk.css.map",
+    "static/js/2.20827e55.chunk.js.LICENSE.txt": "/chatstreamJSONform/static/js/2.20827e55.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/chatstreamJSONform/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.71609dfb.js",
+    "static/js/runtime-main.31c65e8f.js",
     "static/js/2.20827e55.chunk.js",
     "static/css/main.64a74e30.chunk.css",
-    "static/js/main.cb851124.chunk.js"
+    "static/js/main.706077c0.chunk.js"
   ]
 }
