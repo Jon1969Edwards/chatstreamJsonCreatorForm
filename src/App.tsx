@@ -1,12 +1,14 @@
-import { Fragment, useState, useEffect } from 'react';
+import { Fragment, useState, useEffect, useRef } from 'react';
 import { JsonForms } from '@jsonforms/react';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import CopyToClipboard from './CopyToClipboard';
 import Typography from '@material-ui/core/Typography';
 import './App.css';
 import schema from './schema.json';
 import uischema from './uischema.json';
 import { Generate } from '@jsonforms/core';
+import { AccordionDetails } from '@material-ui/core';
 import {
   materialCells,
   materialRenderers,

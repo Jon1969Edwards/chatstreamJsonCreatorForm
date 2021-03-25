@@ -18,70 +18,123 @@
         },
         "Continue": {
           "type": "boolean"
-        }
-      }
-    },
-    "secondQuestion": {
-      "type": "object",
-      "properties": {
-        "secondQuestion": {
-          "type": "string",
-          "minLength": 3,
-          "description": "Please enter your second question"
         },
-        "No": {
-          "type": "boolean"
-        },
-
-        "Yes": {
-          "type": "boolean"
-        },
-        "Continue": {
-          "type": "boolean"
-        }
-      }
-    },
-    "thirdQuestion": {
-      "type": "object",
-      "properties": {
-        "thirdQuestion": {
-          "type": "string",
-          "minLength": 3,
-          "description": "Please enter your third question"
-        },
-        "No": {
-          "type": "boolean"
-        },
-
-        "Yes": {
-          "type": "boolean"
-        },
-        "Continue": {
-          "type": "boolean"
-        }
-      }
-    },
-    "tags": {
-      "properties": {
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "#Tomato",
-              "#Potato",
-              "#Salad",
-              "#Aubergine",
-              "#Cucumber",
-              "#ticketsupport_filed ticketsupport_eta",
-              "#Other"
-            ]
-          },
-          "uniqueItems": true,
-          "minItems": 1
-        },
-        "otherTags": {
+        "statement": {
           "type": "string"
+        },
+        "Issue": {
+          "properties": {
+            "Issue": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "Misc",
+                  "bugs",
+                  "economy",
+                  "Gameplay Issues",
+                  "Question/Suggestion",
+                  "Abuse/Harassment",
+                  "Account",
+                  "Install/Launcher"
+                ]
+              }
+            }
+          }
+        },
+        "secondQuestion": {
+          "type": "object",
+          "properties": {
+            "secondQuestion": {
+              "type": "string",
+              "minLength": 3,
+              "description": "Please enter your second question"
+            },
+            "No": {
+              "type": "boolean"
+            },
+
+            "Yes": {
+              "type": "boolean"
+            },
+            "Continue": {
+              "type": "boolean"
+            },
+            "statement": {
+              "type": "string"
+            },
+
+            "thirdQuestion": {
+              "type": "object",
+              "properties": {
+                "thirdQuestion": {
+                  "type": "string",
+                  "minLength": 3,
+                  "description": "Please enter your third question"
+                },
+                "No": {
+                  "type": "boolean"
+                },
+
+                "Yes": {
+                  "type": "boolean"
+                },
+                "Continue": {
+                  "type": "boolean"
+                },
+                "statement": {
+                  "type": "string"
+                },
+                "fourthQuestion": {
+                  "type": "object",
+                  "properties": {
+                    "fourthQuestion": {
+                      "type": "string",
+                      "minLength": 3,
+                      "description": "Please enter your question"
+                    },
+                    "No": {
+                      "type": "boolean"
+                    },
+
+                    "Yes": {
+                      "type": "boolean"
+                    },
+                    "Continue": {
+                      "type": "boolean"
+                    },
+                    "statement": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "tags": {
+              "properties": {
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "#Tomato",
+                      "#Potato",
+                      "#Salad",
+                      "#Aubergine",
+                      "#Cucumber",
+                      "#ticketsupport_filed ticketsupport_eta",
+                      "#Other"
+                    ]
+                  },
+                  "uniqueItems": true,
+                  "minItems": 1
+                },
+                "otherTags": {
+                  "type": "string"
+                }
+              }
+            }
+          }
         }
       }
     }
