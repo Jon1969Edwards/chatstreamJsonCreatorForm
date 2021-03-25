@@ -2,7 +2,7 @@
   "name": "jsonforms-react-seed",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jonedwards.tech/chatstreamJSONform",
+  "homepage": "https://github.com/Jon1969Edwards/chatstreamJSONform",
   "dependencies": {
     "@jsonforms/core": "^2.5.0",
     "@jsonforms/material-renderers": "^2.5.0",
