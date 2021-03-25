@@ -7,6 +7,7 @@ import logo from './logo.svg';
 import './App.css';
 import schema from './schema.json';
 import uischema from './uischema.json';
+import { Generate } from '@jsonforms/core';
 import {
   materialCells,
   materialRenderers,
@@ -68,8 +69,10 @@ const App = () => {
     <Fragment>
       <div className='App'>
         <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h1 className='App-title'>Welcome to Chatstream JSON Forms</h1>
+          {/* <img src={logo} className='App-logo' alt='logo' /> */}
+          <h1 className='App-title'>
+            Welcome to Chatstream Forms JSON Creator
+          </h1>
           <p className='App-intro'></p>
         </header>
       </div>
@@ -82,7 +85,22 @@ const App = () => {
       >
         <Grid item sm={6}>
           <Typography variant={'h3'} className={classes.title}>
-            Bound data
+            JSON Form
+          </Typography>
+          <div className={classes.demoform}>
+            <JsonForms
+              schema={schema}
+              uischema={Generate.uiSchema(schema)}
+              data={jsonformsData}
+              renderers={renderers}
+              cells={materialCells}
+              onChange={({ errors, data }) => setJsonformsData(data)}
+            />
+          </div>
+        </Grid>
+        <Grid item sm={6}>
+          <Typography variant={'h3'} className={classes.title}>
+            JSON Data
           </Typography>
           <div className={classes.dataContent}>
             <pre id='boundData'>{displayDataAsString}</pre>
@@ -95,21 +113,6 @@ const App = () => {
           >
             Clear data
           </Button>
-        </Grid>
-        <Grid item sm={6}>
-          <Typography variant={'h3'} className={classes.title}>
-            Rendered form
-          </Typography>
-          <div className={classes.demoform}>
-            <JsonForms
-              schema={schema}
-              uischema={uischema}
-              data={jsonformsData}
-              renderers={renderers}
-              cells={materialCells}
-              onChange={({ errors, data }) => setJsonformsData(data)}
-            />
-          </div>
         </Grid>
       </Grid>
     </Fragment>
