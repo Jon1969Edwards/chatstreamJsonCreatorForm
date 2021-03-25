@@ -11,11 +11,11 @@
           "elements": [
             {
               "type": "Control",
-              "scope": "#/properties/firstQuestion"
+              "scope": "#/properties/Issues"
             },
             {
               "type": "Control",
-              "scope": "#/properties/Issues"
+              "scope": "#/properties/firstQuestion"
             },
             {
               "type": "Control",

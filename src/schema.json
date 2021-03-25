@@ -4,24 +4,6 @@
     "firstQuestion": {
       "type": "object",
       "properties": {
-        "firstQuestion": {
-          "type": "string",
-          "minLength": 3,
-          "description": "Please enter your first question"
-        },
-        "No": {
-          "type": "boolean"
-        },
-
-        "Yes": {
-          "type": "boolean"
-        },
-        "Continue": {
-          "type": "boolean"
-        },
-        "statement": {
-          "type": "string"
-        },
         "Issue": {
           "properties": {
             "Issue": {
@@ -41,6 +23,24 @@
               }
             }
           }
+        },
+        "firstQuestion": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Please enter your first question"
+        },
+        "No": {
+          "type": "boolean"
+        },
+
+        "Yes": {
+          "type": "boolean"
+        },
+        "Continue": {
+          "type": "boolean"
+        },
+        "statement": {
+          "type": "string"
         },
         "secondQuestion": {
           "type": "object",
