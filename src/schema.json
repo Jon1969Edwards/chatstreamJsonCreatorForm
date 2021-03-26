@@ -1,29 +1,70 @@
 {
   "type": "object",
   "properties": {
-    "firstQuestion": {
-      "type": "object",
+    "Task Type": {
+      "properties": {
+        "Task Type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "New",
+              "MA-Studio",
+              "MA-Support",
+              "LS",
+              "Economy",
+              "Partner",
+              "Player"
+            ]
+          }
+        }
+      }
+    },
+    "Priority": {
+      "properties": {
+        "Priority": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["low", "normal", "high", "urgent"]
+          }
+        }
+      }
+    },
+    "Issues": {
       "properties": {
         "Issue": {
-          "properties": {
-            "Issue": {
-              "type": "array",
-              "items": {
-                "type": "string",
-                "enum": [
-                  "Misc",
-                  "bugs",
-                  "economy",
-                  "Gameplay Issues",
-                  "Question/Suggestion",
-                  "Abuse/Harassment",
-                  "Account",
-                  "Install/Launcher"
-                ]
-              }
-            }
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Misc",
+              "bugs",
+              "economy",
+              "Gameplay Issues",
+              "Question/Suggestion",
+              "Abuse/Harassment",
+              "Account",
+              "Install/Launcher"
+            ]
           }
-        },
+        }
+      }
+    },
+    "Type": {
+      "properties": {
+        "Type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["Incident", "Problem", "Task", "Question"]
+          }
+        }
+      }
+    },
+    "questions": {
+      "type": "object",
+      "properties": {
         "firstQuestion": {
           "type": "string",
           "minLength": 3,
@@ -109,32 +150,32 @@
                   }
                 }
               }
-            },
-            "tags": {
-              "properties": {
-                "tags": {
-                  "type": "array",
-                  "items": {
-                    "type": "string",
-                    "enum": [
-                      "#Tomato",
-                      "#Potato",
-                      "#Salad",
-                      "#Aubergine",
-                      "#Cucumber",
-                      "#ticketsupport_filed ticketsupport_eta",
-                      "#Other"
-                    ]
-                  },
-                  "uniqueItems": true,
-                  "minItems": 1
-                },
-                "otherTags": {
-                  "type": "string"
-                }
-              }
             }
           }
+        }
+      }
+    },
+    "tags": {
+      "properties": {
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "#Tomato",
+              "#Potato",
+              "#Salad",
+              "#Aubergine",
+              "#Cucumber",
+              "#ticketsupport_filed ticketsupport_eta",
+              "#Other"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "otherTags": {
+          "type": "string"
         }
       }
     }
