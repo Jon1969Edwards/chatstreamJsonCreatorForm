@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Fragment, useState, useEffect } from 'react';
 import { JsonForms } from '@jsonforms/react';
 import Grid from '@material-ui/core/Grid';
@@ -69,9 +72,9 @@ const App = () => {
       <div className='App'>
         <header className='App-header'>
           {/* <img src={logo} className='App-logo' alt='logo' /> */}
-          <h1 className='App-title'>
+          <h4 className='App-title'>
             Welcome to Chatstream Forms JSON Creator
-          </h1>
+          </h4>
           <p className='App-intro'></p>
         </header>
       </div>
@@ -104,6 +107,15 @@ const App = () => {
           <div className={classes.dataContent}>
             <pre id='boundData'>{displayDataAsString}</pre>
           </div>
+          <Button
+            className={classes.resetButton}
+            onClick={() => navigator.clipboard.writeText(displayDataAsString)}
+            color='primary'
+            variant='contained'
+          >
+            copy to clipboard
+          </Button>
+          <br></br>
           <Button
             className={classes.resetButton}
             onClick={clearData}
