@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chatstreamJsonCreatorForm/static/css/main.64a74e30.chunk.css",
-    "main.js": "/chatstreamJsonCreatorForm/static/js/main.3eeaa97d.chunk.js",
-    "main.js.map": "/chatstreamJsonCreatorForm/static/js/main.3eeaa97d.chunk.js.map",
+    "main.js": "/chatstreamJsonCreatorForm/static/js/main.bfc4a9e3.chunk.js",
+    "main.js.map": "/chatstreamJsonCreatorForm/static/js/main.bfc4a9e3.chunk.js.map",
     "runtime-main.js": "/chatstreamJsonCreatorForm/static/js/runtime-main.ca311b51.js",
     "runtime-main.js.map": "/chatstreamJsonCreatorForm/static/js/runtime-main.ca311b51.js.map",
     "static/js/2.9f28b481.chunk.js": "/chatstreamJsonCreatorForm/static/js/2.9f28b481.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ca311b51.js",
     "static/js/2.9f28b481.chunk.js",
     "static/css/main.64a74e30.chunk.css",
-    "static/js/main.3eeaa97d.chunk.js"
+    "static/js/main.bfc4a9e3.chunk.js"
   ]
 }

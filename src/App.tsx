@@ -1,6 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Fragment, useState, useEffect } from 'react';
 import { JsonForms } from '@jsonforms/react';
 import Grid from '@material-ui/core/Grid';
@@ -8,7 +5,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './App.css';
 import schema from './schema.json';
-import uischema from './uischema.json';
 import { Generate } from '@jsonforms/core';
 import {
   materialCells,
@@ -18,6 +14,7 @@ import RatingControl from './RatingControl';
 import ratingControlTester from './ratingControlTester';
 import { makeStyles } from '@material-ui/core/styles';
 import MyGroupRenderer, { myGroupTester } from './MyGroup';
+import { Accordion } from '@material-ui/core';
 
 const useStyles = makeStyles((_theme) => ({
   container: {
@@ -42,6 +39,7 @@ const useStyles = makeStyles((_theme) => ({
   demoform: {
     margin: 'auto',
     padding: '1rem',
+    marginBottom: '1rem',
   },
 }));
 
