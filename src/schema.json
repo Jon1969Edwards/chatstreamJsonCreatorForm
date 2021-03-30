@@ -22,12 +22,9 @@
     },
     "Priority": {
       "properties": {
-        "Priority": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": ["low", "normal", "high", "urgent"]
-          }
+        "priority": {
+          "type": "string",
+          "enum": ["low", "normal", "high", "urgent"]
         }
       }
     },
