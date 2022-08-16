@@ -14,7 +14,6 @@ import RatingControl from './RatingControl';
 import ratingControlTester from './ratingControlTester';
 import { makeStyles } from '@material-ui/core/styles';
 import MyGroupRenderer, { myGroupTester } from './MyGroup';
-import { Accordion } from '@material-ui/core';
 
 const useStyles = makeStyles((_theme) => ({
   container: {
@@ -94,7 +93,7 @@ const App = () => {
               data={jsonformsData}
               renderers={renderers}
               cells={materialCells}
-              onChange={({ errors, data }) => setJsonformsData(data)}
+              onChange={({ data }) => setJsonformsData(data)}
             />
           </div>
         </Grid>
