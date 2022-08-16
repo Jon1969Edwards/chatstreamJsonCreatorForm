@@ -2,7 +2,7 @@
   "name": "chatstream-json-creator-form",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jonstechstack.com/chatstreamJsonCreatorForm",
+  "homepage": "https://poetic-dragon-a4589c.netlify.app",
   "dependencies": {
     "@jsonforms/material-renderers": "^2.5.2",
     "@jsonforms/react": "^2.5.2",
